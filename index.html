@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ctrl + Create — AI-driven video for any format: commercials, social, long-form, and experimental moving image."
+    />
+    <meta name="theme-color" content="#0c0c0c" />
+    <title>Ctrl + Create — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("reduce-motion");
+      }
+    </script>
+  </head>
+
+  <body class="page-home">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="progress-bar"></div>
+
+      <div class="preloader-center">
+        <p class="preloader-brand-eye">Ctrl + Create</p>
+
+        <div class="preloader-images">
+          <div class="img preloader-img-stack">
+            <video
+              class="preloader-rush__v is-preloader-rush-active"
+              muted
+              playsinline
+              preload="auto"
+              poster="./img/img1.jpg"
+              aria-hidden="true"
+            >
+              <source src="./video/Prewivew.mp4" type="video/mp4" />
+            </video>
+            <video
+              class="preloader-rush__v"
+              muted
+              playsinline
+              preload="auto"
+              poster="./img/img2.jpg"
+              aria-hidden="true"
+            >
+              <source src="./video/Hugo Boss Ad.mp4" type="video/mp4" />
+            </video>
+            <video
+              class="preloader-rush__v"
+              muted
+              playsinline
+              preload="auto"
+              poster="./img/img3.jpg"
+              aria-hidden="true"
+            >
+              <source src="./video/Vailo Commercial.mp4" type="video/mp4" />
+            </video>
+            <video
+              class="preloader-rush__v"
+              muted
+              playsinline
+              preload="auto"
+              poster="./img/img4.jpg"
+              aria-hidden="true"
+            >
+              <source src="./video/Anime Style Video.mp4" type="video/mp4" />
+            </video>
+            <video
+              class="preloader-rush__v"
+              muted
+              playsinline
+              preload="auto"
+              poster="./img/img1.jpg"
+              aria-hidden="true"
+            >
+              <source src="./video/Commercial Video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="preloader-copy">
+        <p>
+          Ctrl + Create — intelligent moving image, built for whatever screen or
+          format your story needs.
+        </p>
+      </div>
+    </div>
+
+    <header class="preloader-header">
+      <div class="preloader-header__brand">
+        <a href="index.html" class="brand-link">Ctrl + Create</a>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-visual" aria-hidden="true">
+          <video
+            id="hero-video"
+            class="hero-visual__video"
+            autoplay
+            muted
+            playsinline
+            loop
+            preload="auto"
+            poster="./img/img1.jpg"
+          >
+            <source src="./video/Prewivew.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-titles">
+            <div class="header-row">
+              <div class="divider" aria-hidden="true"></div>
+              <h1>AI video</h1>
+            </div>
+            <div class="header-row">
+              <div class="divider" aria-hidden="true"></div>
+              <h1>in any</h1>
+            </div>
+            <div class="header-row">
+              <div class="divider" aria-hidden="true"></div>
+              <h1>format</h1>
+            </div>
+          </div>
+          <p class="hero-sub">Commercial · social · long-form · experimental</p>
+        </div>
+      </section>
+
+      <section id="work" class="section-work-editorial" aria-label="Selected work">
+        <div class="section-inner section-inner--bleed-top">
+          <p class="work-section-label" data-reveal>Selected AI pieces</p>
+        </div>
+
+        <article class="work-feature" data-reveal>
+          <a class="work-feature__link" href="#" aria-label="Open project Vailo Ads">
+            <figure class="work-feature__media">
+              <img
+                class="work-feature__fallback-img"
+                src="./img/img1.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="1080"
+              />
+              <video
+                class="work-feature__video"
+                muted
+                playsinline
+                loop
+                preload="metadata"
+              >
+                <source src="./video/Vailo Commercial.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <div class="work-feature__caption section-inner">
+              <span class="work-feature__index" aria-hidden="true">01</span>
+              <div class="work-feature__text">
+                <h3 class="work-feature__title">Vailo Ads</h3>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-feature work-feature--offset" data-reveal>
+          <a class="work-feature__link" href="#" aria-label="Open project Anime Ads">
+            <figure class="work-feature__media">
+              <img
+                class="work-feature__fallback-img"
+                src="./img/img2.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="1080"
+              />
+              <video
+                class="work-feature__video"
+                muted
+                playsinline
+                loop
+                preload="metadata"
+              >
+                <source src="./video/Anime Style Video.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <div class="work-feature__caption section-inner work-feature__caption--push">
+              <span class="work-feature__index" aria-hidden="true">02</span>
+              <div class="work-feature__text">
+                <h3 class="work-feature__title">Anime Ads</h3>
+                <p class="work-feature__meta">Animated Ai Video · 16:9</p>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-feature" data-reveal>
+          <a class="work-feature__link" href="#" aria-label="Open project Hugo Boss Ads">
+            <figure class="work-feature__media">
+              <img
+                class="work-feature__fallback-img"
+                src="./img/img3.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="1080"
+              />
+              <video
+                class="work-feature__video"
+                muted
+                playsinline
+                loop
+                preload="metadata"
+              >
+                <source src="./video/Hugo Boss Ad.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <div class="work-feature__caption section-inner">
+              <span class="work-feature__index" aria-hidden="true">03</span>
+              <div class="work-feature__text">
+                <h3 class="work-feature__title">Hugo Boss Ads</h3>
+                <p class="work-feature__meta">Fashion Ai spot · 16:9</p>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <div class="section-inner section-work-editorial__more" data-reveal>
+          <a class="text-link-more" href="work.html">Full index — all pieces</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner site-footer__inner">
+        <p><span id="year"></span> · Ctrl + Create</p>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="nav-home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/CustomEase.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

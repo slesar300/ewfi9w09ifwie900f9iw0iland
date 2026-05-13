@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="is-ready">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ctrl + Create — full index of AI video work: commercials, social, long-form."
+    />
+    <meta name="theme-color" content="#0c0c0c" />
+    <title>Ctrl + Create — Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("reduce-motion");
+      }
+    </script>
+  </head>
+
+  <body class="page-work">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="preloader-header">
+      <div class="preloader-header__brand">
+        <a href="index.html" class="brand-link">Ctrl + Create</a>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html" aria-current="page">Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="archive" class="section section-archive page-work-main" aria-label="Full index of work">
+        <div class="section-inner">
+          <header class="archive-head" data-reveal>
+            <p class="editorial-label">Index</p>
+            <h1 class="archive-title">Every piece in one wall</h1>
+            <p class="archive-intro">
+              Only video files from <span class="archive-intro__path">video/</span> — no still placeholders. Click a tile to play. New clips: add the file, then add its name to <span class="archive-intro__path">work-videos.js</span>.
+            </p>
+          </header>
+        </div>
+
+        <div class="archive-grid-wrap" data-reveal>
+          <div class="archive-grid" id="work-archive-grid" role="list"></div>
+        </div>
+      </section>
+    </main>
+
+    <dialog
+      id="work-video-dialog"
+      class="work-player"
+      aria-labelledby="work-player-title"
+    >
+      <button
+        type="button"
+        class="work-player__backdrop"
+        aria-label="Close player"
+        tabindex="-1"
+      ></button>
+      <div class="work-player__frame">
+        <button type="button" class="work-player__close" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <p id="work-player-title" class="work-player__title"></p>
+        <video
+          id="work-player-video"
+          class="work-player__video"
+          controls
+          playsinline
+          preload="metadata"
+        ></video>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="section-inner site-footer__inner">
+        <p><span id="year"></span> · Ctrl + Create</p>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="work.html" aria-current="page">Work</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="work-videos.js?v=4"></script>
+    <script src="nav-home.js?v=4"></script>
+    <script src="common.js?v=4"></script>
+  </body>
+</html>
